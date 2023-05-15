@@ -22,7 +22,7 @@ const Component = (props) => {
                 
             <li className="list-group-item d-flex " 
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {item}                
+                {item.label}                
                 {showDeleteButton && (<button type="button" className={` btn  ms-auto me-0 `} onClick={()=>{handleDelete(index)}}>X</button>)}
             </li> 
                     
