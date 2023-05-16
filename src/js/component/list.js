@@ -3,7 +3,7 @@ import Component from "./component";
 
 
 const List  = (props) => {
-    const {list, setList,list_get} = props;
+    const {list, setList,list_get: list_getinator} = props;
 
     const handleDelete = (deleteIndex) =>{
         
@@ -16,7 +16,7 @@ const List  = (props) => {
 			}
 		})
 		.then(response => response.json())
-		.then(result => list_get())
+		.then(result => list_getinator())
 		.catch(error => console.log('error', error));
 
         

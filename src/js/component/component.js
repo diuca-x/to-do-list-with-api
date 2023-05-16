@@ -20,10 +20,10 @@ const Component = (props) => {
     return (
         
                 
-            <li className="list-group-item d-flex " 
+            <li className="list-group-item d-flex bg-light align-middle justify-content-start" 
                 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                {item.label}                
-                {showDeleteButton && (<button type="button" className={` btn  ms-auto me-0 `} onClick={()=>{handleDelete(index)}}>X</button>)}
+                <p className="text-center">{item.label} </p>               
+                {showDeleteButton && (<button type="button " className="btn btn-danger ms-auto me-0 " onClick={()=>{handleDelete(index)}}>X</button>)}
             </li> 
                     
         

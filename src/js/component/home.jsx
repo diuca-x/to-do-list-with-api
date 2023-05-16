@@ -22,7 +22,7 @@ const Home = () => {
 			.catch(error => console.log('error', error))
 	}
 
-	const list_get = () => {
+	const list_getinator = () => {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/diuca", {
 			method: 'GET', 			
 			headers:{
@@ -61,16 +61,16 @@ const Home = () => {
 
 	return (
 		<div className="container">
-			<div className="row justify-content-center mt-5">
-				<div className="col d-flex justify-content-center">
+			<div className="row justify-content-center mt-5 ">
+				<div className="col-4 d-flex justify-content-center border rounded-top bg-light">
 					<h1>Todo</h1>
 				</div>
 			</div>
 			<div className="row justify-content-center">
-				<div className="col d-flex justify-content-center">					
-					<ul className="list-group">
-						<Form list = {list} setList={setList} list_get ={list_get}/>
-						<List list ={list} setList = {setList} list_get ={list_get}/>
+				<div className="col-4 d-flex justify-content-center p-0">					
+					<ul className="list-group w-100 m-0 p-0 ">
+						<Form list = {list} setList={setList} list_get ={list_getinator}/>
+						<List list ={list} setList = {setList} list_get ={list_getinator}/>
 					</ul>
 				</div>				
 			</div>
